@@ -1,4 +1,5 @@
-# RSVlionAdSDK
+# gamecenter_sdk_ios
+
 接入说明
 直接下载导入工程
 pod导入添加语句   pod 'RSGameVlionAd'
