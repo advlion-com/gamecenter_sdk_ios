@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol VlionAdViewDelegate <NSObject>
 
 @optional
-/**WebView加载完毕执行方法，title为前端页面title*/
-- (void)webViewDidFinishGetWebTitle:(NSString *)title;
 
 /**加载Banner广告*/
 - (void)onloadVlionBannerAdWithAdId:(NSString *)adId cover:(BOOL)cover position:(BOOL)position;
