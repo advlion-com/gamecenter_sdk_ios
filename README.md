@@ -37,21 +37,21 @@ VlionAdView *webView = [[VlionAdView alloc] initWithFrame:frame vmediaId:@“XX"
 
 // adId广告位id;cover:YES是覆盖 NO是并排;position:YES是上方 NO是下方
 
-- (void)onloadVlionBannerAdWithAdId:(NSString *)adId cover:(BOOL)cover position:(BOOL)position;
+-(void)onloadVlionBannerAdWithAdId:(NSString *)adId cover:(BOOL)cover position:(BOOL)position;
 
 2.2.2 Banner打点
 
 /**Banner广告点击打点*/
 
-- (void)onBannerClicke;
+-(void)onBannerClicke;
 
 /**Banner广告展示成功打点*/
 
-- (void)onBannerShowSuccess;
+-(void)onBannerShowSuccess;
 
 /**Banner广告展示失败打点*/
 
-- (void)onBannerShowFailed;
+-(void)onBannerShowFailed;
 
 2.3 加载插屏广告
 
@@ -59,21 +59,21 @@ VlionAdView *webView = [[VlionAdView alloc] initWithFrame:frame vmediaId:@“XX"
 
 // adId广告位id
 
-- (void)onloadVlionSpotAdWithAdId:(NSString *)adId;
+-(void)onloadVlionSpotAdWithAdId:(NSString *)adId;
 
 2.3.2 插屏打点
 
 /**插屏广告展示失败*/
 
-- (void)onSpotShowFailed;
+-(void)onSpotShowFailed;
 
 /**插屏广告关闭*/
 
-- (void)onSpotClosed;
+-(void)onSpotClosed;
 
 /**插屏广告点击*/
 
-- (void)onSpotClicked;
+-(void)onSpotClicked;
 
 /**插屏广告展示成功*/
 
@@ -85,40 +85,40 @@ VlionAdView *webView = [[VlionAdView alloc] initWithFrame:frame vmediaId:@“XX"
 
 // adId广告位id,下载激励视频
 
-- (void)onloadVlionRewardVideoAdWithAdId:(NSString *)adId;
+-(void)onloadVlionRewardVideoAdWithAdId:(NSString *)adId;
 
 // adId广告位id,展示激励视频
 
-- (void)onshowVlionRewardVideoAdWithAdId:(NSString *)adId;
+-(void)onshowVlionRewardVideoAdWithAdId:(NSString *)adId;
 
 2.4.2 激励视频打点
 
 /**视频广告缓存成功*/
 
-- (void)onRewardVideoLoadVideo;
+-(void)onRewardVideoLoadVideo;
 
 /**视频广告开始播放*/
 
-- (void)onRewardVideoPlayStart;
+-(void)onRewardVideoPlayStart;
 
 /**视频广告点击*/
 
-- (void)onRewardVideoClicked;
+-(void)onRewardVideoClicked;
 
 /**视频广告关闭*/
 
-- (void)onRewardVideoClosed;
+-(void)onRewardVideoClosed;
 
 /**视频广告播放完成*/
 
-- (void)onRewardVideoFinish;
+-(void)onRewardVideoFinish;
 
 /**视频广告播放失败*/
 
-- (void)onRewardVideoPlayFailed;
+-(void)onRewardVideoPlayFailed;
 
 /**视频广告激励完成*/
 
-- (void)onRewardVideoVerify;
+-(void)onRewardVideoVerify;
 
 
