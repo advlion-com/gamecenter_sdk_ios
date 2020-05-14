@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "RSGameVlionAd"
-    spec.version      = "1.0.3"
+    spec.version      = "1.0.4"
     spec.summary      = "小游戏SDK"
     
     spec.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
     spec.vendored_frameworks = 'RSGameVlionAd.framework'
     spec.resource = 'RSGameVlionAd.bundle'
-    spec.dependency 'TaurusXAdMediation_TikTok'
+    spec.dependency 'Bytedance-UnionAD'
     
     valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
     spec.xcconfig = {
