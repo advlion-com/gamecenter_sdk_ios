@@ -15,16 +15,20 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 /**加载Banner广告*/
-- (void)onloadVlionBannerAdWithAdId:(NSString *)adId cover:(BOOL)cover position:(BOOL)position;
+- (void)onLoadVlionBannerAd:(NSString *)adId;
 
 /**加载插屏广告*/
-- (void)onloadVlionSpotAdWithAdId:(NSString *)adId;
+- (void)onLoadVlionSpotAd:(NSString *)adId;
 
 /**加载激励视频广告*/
-- (void)onloadVlionRewardVideoAdWithAdId:(NSString *)adId;
+- (void)onLoadVlionRewardVideoAd:(NSString *)adId;
 
 /**展示激励视频广告*/
-- (void)onshowVlionRewardVideoAdWithAdId:(NSString *)adId;
+- (void)onShowVlionRewardVideoAd:(NSString *)adId;
+/**进入游戏后回调*/
+- (void)vlionAdViewClickGame:(NSString *)gameId;
+/**退出游戏后回调*/
+- (void)vlionAdViewExitGame:(NSString *)gameId durration:(float)duration;
 
 @end
 
@@ -32,7 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<VlionAdViewDelegate> delegate;
 
-- (instancetype)initWithFrame:(CGRect)frame vmediaId:(NSString *)vmediaId;
+- (instancetype)initWithFrame:(CGRect)frame
+                      mediaId:(NSString *)mediaId
+               rootController:(UIViewController *)rootController;
 
 /**Banner广告点击打点*/
 - (void)onBannerClicke;
