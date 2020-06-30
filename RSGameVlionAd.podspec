@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "RSGameVlionAd"
-    spec.version      = "1.0.5"
+    spec.version      = "1.3.8"
     spec.summary      = "小游戏SDK"
     
     spec.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
     spec.vendored_frameworks = 'RSGameVlionAd.framework'
     spec.resource = 'RSGameVlionAd.bundle'
-    spec.dependency 'Bytedance-UnionAD'
+    spec.dependency = 'Bytedance-UnionAD'
     
     valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
     spec.xcconfig = {
